@@ -1,0 +1,19 @@
+{
+  "name": "pm_22_08",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/8Nigel8/pm_22_08.git"
+  },
+  "author": "darmoris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/8Nigel8/pm_22_08/issues"
+  },
+  "homepage": "https://github.com/8Nigel8/pm_22_08#readme"
+}
