@@ -15,5 +15,19 @@
   "bugs": {
     "url": "https://github.com/8Nigel8/pm_22_08/issues"
   },
-  "homepage": "https://github.com/8Nigel8/pm_22_08#readme"
+  "homepage": "https://github.com/8Nigel8/pm_22_08#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "latest",
+    "gulp-cssnano": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "latest",
+    "sass": "latest"
+  }
 }
