@@ -18,8 +18,8 @@
 
 </head>
 <body>
-<div class="main-container">
-    <div class="col-lg-12" id="header">
+    <div class="main-container">
+        <div class="col-lg-12" id="header">
   <button class="sidebar-control" data-bs-toggle="collapse" data-bs-target="#side_nav" aria-expanded="false" aria-controls="side_nav">
     <img src="../images/sidebar-control.png" alt="">
   </button>
@@ -52,8 +52,8 @@
       <div class="trigle-down"></div>
     </div>
 </div>
-    <div class="d-flex">
-    <div class="sidebar collapse" id="side_nav">
+        <div class="d-flex">
+            <div class="sidebar collapse show" id="side_nav">
     
     <div id="profile">
         <div id="profile-img">
@@ -101,7 +101,7 @@
         </ul>
     </div>
 </div>
-    <div id="content">
+            <div id="content">
     <div class="line">
         <div id="destination">
             <span>
@@ -124,25 +124,25 @@
         </div>
     </div>
     <div class="line">
-        <div class="count-info_box b-g-color-fff">
+        <div class="count-info_box b-g-color-fff shadow">
             <span class="prew">Visitors</span>
             <div class="img_box"><img src="../images/visitors.png" alt=""></div>
             <hr class="hr-in-box">
             <span><b> 125 K</b></span>
         </div>
-        <div class="count-info_box b-g-color-fff">
+        <div class="count-info_box b-g-color-fff shadow">
             <span class="prew">New Order</span>
             <div class="img_box"><img src="../images/new-order.png" alt=""></div>
             <hr class="hr-in-box">
             <span><b> 125 K</b></span>
         </div>
-        <div class="count-info_box b-g-color-fff">
+        <div class="count-info_box b-g-color-fff shadow">
             <span class="prew">Sales</span>
             <div class="img_box"><img src="../images/sales.png" alt=""></div>
             <hr class="hr-in-box">
             <span><b> 125 K</b></span>
         </div>
-        <div class="count-info_box b-g-color-fff">
+        <div class="count-info_box b-g-color-fff shadow">
             <span class="prew">Shipping</span>
             <div class="img_box"><img src="../images/shipping.png" alt=""></div>
             <hr class="hr-in-box">
@@ -150,7 +150,7 @@
         </div>
     </div>
     <div class="line">
-        <div id="earning_box" class="b-g-color-fff">
+        <div id="earning_box" class="b-g-color-fff shadow">
             <div class="head-item">
                 <span><b>EARNING GRAPH OVERVIEW</b></span>
                 <div>
@@ -159,11 +159,19 @@
                     <img src="../images/cross.png" alt="">
                 </div>
             </div>
-            <canvas  id="earning_graph" width="100%" height="70%"></canvas>
+            <div class="any-content">
+                <canvas  id="earning_graph" width="40" height="10"></canvas>
+                <div class="line">
+                    <div class="legend-r"><b>$12,000</b>Revenue</div>
+                    <div class="legend-o"><b>$12,000</b>Order</div>
+                    <div class="legend-t"><b>$12,000</b>Tax</div>
+                    <div class="legend-s"><b>$12,000</b>Shipment</div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="line">
-        <div id="top-search_box" class="b-g-color-fff">
+        <div id="top-search_box" class="b-g-color-fff shadow">
             <div class="head-item">
                 <span><b>TOP SEARCH</b></span>
                 <div>
@@ -172,9 +180,46 @@
                     <img src="../images/cross.png" alt="">
                 </div>
             </div>
-            Comming soon
+            <div class="d-flex">
+                <div style="width: calc(100% - 151px); height:calc(100% - 50px);">
+                    <div id="topSearch_map"></div>
+                </div>
+                <div class="col" style="width: auto; height:100%;">
+                    <div class="top-country">
+                        <div><img src="../images/USA.png" alt=""></div>
+                        <div>
+                            America
+                            <b>46%</b>
+                        </div>
+                    </div>
+                    <div class="top-country">
+                        <div><img src="../images/UK.png" alt=""></div>
+                        <div>
+                            U.Kingdom
+                            <b>24%</b>
+                        </div></div>
+                    <div class="top-country">
+                        <div><img src="../images/BD.png" alt=""></div>
+                        <div>
+                            Bangladesh
+                            <b>18%</b>
+                        </div></div>
+                    <div class="top-country">
+                        <div><img src="../images/CD.png" alt=""></div>
+                        <div>
+                            Canada
+                            <b>12%</b>
+                        </div></div>
+                    <div class="top-country">
+                        <div><img src="../images/RUS.png" alt=""></div>
+                        <div>
+                            Russia
+                            <b>10%</b>
+                        </div></div>
+                </div>
+            </div>
         </div>
-        <div id="trafic-sources_box" class="b-g-color-fff">
+        <div id="trafic-sources_box" class="b-g-color-fff shadow">
             <div class="head-item">
                 <span><b>TRAFIC SOURCES</b></span>
                 <div>
@@ -212,7 +257,7 @@
         </div>
     </div>
     <div class="line">
-        <div id="recent-order_box" class="b-g-color-fff">
+        <div id="recent-order_box" class="b-g-color-fff shadow">
             <div class="head-item">
                 <span><b>RECENT ORDER</b></span>
                 <div>
@@ -276,7 +321,7 @@
         </div>
     </div>
     <div class="line">
-        <div id="site-visits_box" class="b-g-color-fff">
+        <div id="site-visits_box" class="b-g-color-fff shadow">
             <div class="head-item">
                 <span><b>SITE VISITS</b></span>
                 <div>
@@ -285,9 +330,27 @@
                     <img src="../images/cross.png" alt="">
                 </div>
             </div>
-            Comming soon
+            <div class="any-content">
+                <canvas id="site_visits" width="400" height="200"></canvas>
+                <div class="line">
+                    <div class="lable">
+                        <img src="../images/new-wisitors.png" alt="">
+                        <div class="text">
+                            New wisitors
+                            <b>12,423</b>
+                        </div>
+                    </div>
+                    <div class="lable">
+                        <img src="../images/old-wisitors.png" alt="">
+                        <div class="text">
+                            Old wisitors
+                            <b>12,423</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="marceting-campaing_box" class="b-g-color-fff">
+        <div id="marceting-campaing_box" class="b-g-color-fff shadow">
             <div class="head-item">
                 <span><b>MARCETING CAMPING</b></span>
                 <div>
@@ -296,18 +359,27 @@
                     <img src="../images/cross.png" alt="">
                 </div>
             </div>
-        <div>
-            <div class="any-content">
-                <canvas id="marceting_camping" width="150" height="150"></canvas>
+        <div class="any-content">
+            <div class="procent-r">Research <b>62%</b></div>
+            <div class="procent-i">Information <b>17%</b></div>
+            <div class="procent-d">Product Desing <b>13%</b></div>
+            <div class="procent-p">Pacaging <b>8%</b></div>
+            <div class="graph-form-control">
+                <canvas id="marceting_camping" width="200" height="150"></canvas>
             </div>
         </div>
         </div>
     </div>
 </div>
+        </div>
     </div>
-</div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="js/scripts.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/accessibility.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
 </html>
