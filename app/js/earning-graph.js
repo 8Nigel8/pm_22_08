@@ -5,7 +5,7 @@ const data = {
         label: 'Revenue',
         backgroundColor: '#85c875',
         borderColor: '#85c875',
-        data: [2000, 3000, 5000, 10000, 6000, 4000, 3000, 3600, 10000, 10000, 3000, 1000],
+        data:[],
         fill: 'start',
         pointRadius: 1,
         pointBackgroundColor: '#85c875',
@@ -14,7 +14,7 @@ const data = {
         label: 'Order',
         backgroundColor: '#f1a80a',
         borderColor: '#f1a80a',
-        data: [2000, 3200, 7000, 15500, 6000, 4000, 4400, 6000, 10000, 9000, 5000, 3000],
+        data:[],
         fill: 'start',
         pointRadius: 1,
         pointBackgroundColor: '#f1a80a',
@@ -23,7 +23,7 @@ const data = {
         label: 'Tax',
         backgroundColor: '#0bc4df',
         borderColor: '#0bc4df',
-        data: [3000, 5000, 10000, 15000, 10000, 2000, 2000, 2000, 2000, 15000, 2000, 5000],
+        data:[],
         fill: 'start',
         pointRadius: 1,
         pointBackgroundColor: '#0bc4df',
@@ -32,7 +32,7 @@ const data = {
         label: 'Shipment',
         backgroundColor: '#3366ff',
         borderColor: '#3366ff',
-        data: [2500, 3000, 5000, 10000, 10000, 6000, 3000, 3000, 10000, 13000, 3000, 1000],
+        data:[],
         fill: 'start',
         pointRadius: 1,
         pointBackgroundColor: '#3366ff',
@@ -83,3 +83,10 @@ const earning_graph = new Chart(
     document.getElementById('earning_graph'),
     config
 );
+$.ajax("./data.json").done(function (response) {
+    earning_graph.data.datasets[0].data = response.data1;
+    earning_graph.data.datasets[1].data = response.data2;
+    earning_graph.data.datasets[2].data = response.data3;
+    earning_graph.data.datasets[3].data = response.data4;
+    earning_graph.update();
+});
